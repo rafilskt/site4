@@ -1,0 +1,259 @@
+body {
+		font-family: Nunito, sans-serif;
+		color: #1c1c1c;
+}
+
+h1, h2, h3 {
+		font-family: Asap, sans-serif;
+		color: #000000;
+}
+
+.botao {
+		color: #EAE1F5;
+		text-decoration: none;
+		padding: 10px 30px;
+		background-color: #ff0000;
+		font-size: .9em;
+		border-radius: 3px;
+
+}
+
+/* Navegação */
+
+nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #ff0000;
+}
+
+nav > a {
+		text-decoration: none;
+		color: #EAE1F5;
+		font-weight: 800;
+		font-size: 32px;
+		font-family: Redressed, sans-serif;
+}
+
+nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+}
+
+nav ul li {
+		text-align: center;
+		width: 100%;
+}
+
+nav ul li a {
+		display: inline-block;
+		padding: 10px;
+		width: 100%;
+		text-decoration: none;
+		color: #EAE1F5;
+}
+
+/* CAbeçaalho */
+
+header {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url("../img/camera.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: #EAE1F5;
+		text-align: center;
+		padding: 20px;
+}
+
+header h1 {
+		color: #EAE1F5;
+}
+
+header p {
+		margin-bottom: 2em;
+
+}
+
+#sobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 10px 10px 20px 20px;
+		background-color: #ff0000;
+		color: #EAE1F5;
+}
+
+#sobre h2 { 
+		color: #EAE1F5;
+}
+
+#sobre p {
+		margin-bottom: 2.5em;
+		max-width: 1000px;
+}
+
+
+#sobre .botao {
+
+		background-color: #ffffff;
+		color: #383838;
+}
+
+/*Serviços*/
+
+#serviços {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px;
+}
+
+#serviços div {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+}
+
+/*Fotos*/
+
+#fotos {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+#fotos h2 {
+
+		margin-bottom: 20px;
+}
+
+#fotos img {
+		width: 100%;
+}
+
+/*Contato*/
+
+#contato {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+}
+
+#contato h2 {
+		color: #000000;
+}
+
+/*rodape */
+
+
+footer {
+
+		text-align: center;
+		padding: 10px;
+		background-color: #ff0000;
+		color: #EAE1F5;
+}
+
+footer a {
+		text-decoration: none;
+		color: #B1FAE5;
+}
+
+@media screen and (min-width: 765px) {
+
+		/*nav*/
+
+		nav {
+
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		nav ul {
+
+			flex-direction: row;
+			width: 70%;
+		}
+
+		/*cabeçalho*/
+
+		header {
+
+			height: 600px;
+			height: 60vh;
+			justify-content: center;
+		}
+
+		/*sobre*/
+
+		#sobre {
+
+			height: 250px;
+			height: 30vh;
+			justify-content: center;
+			min-height: 250px;
+
+		}
+		/*serviçoes*/
+
+		
+
+		#serviços h2 {
+
+			text-align: center;
+			width: 100%;
+		}
+
+		#serviços div {
+			flex-grow: 1;
+			flex-basis: 150px;
+			padding: 0 10px;
+
+
+		}
+
+		/*fotos*/
+
+		#fotos {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		#fotos h2 {
+			width: 100%;
+			text-align: center;
+		}
+		#fotos img {
+			width: 33.3333333%;
+		}	
+		/*contato*/
+
+		#contato {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		#contato h2, #contato p {
+    		width: 100%;
+
+		}
+}
